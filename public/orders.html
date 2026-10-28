@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orders - Acme Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="orders">
+  <nav>
+    <h2>Acme Dashboard</h2>
+    <a href="/" >Overview</a>
+    <a href="/orders.html" class="active">Orders</a>
+    <a href="/customers.html" >Customers</a>
+  </nav>
+  <main>
+    <h1>Orders</h1>
+    <div class="toolbar">
+      <select id="filter">
+        <option value="">All statuses</option>
+        <option>Paid</option>
+        <option>Pending</option>
+        <option>Refunded</option>
+      </select>
+    </div>
+    <div class="card">
+      <table>
+        <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Status</th><th>Date</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

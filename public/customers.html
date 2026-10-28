@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customers - Acme Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="customers">
+  <nav>
+    <h2>Acme Dashboard</h2>
+    <a href="/" >Overview</a>
+    <a href="/orders.html" >Orders</a>
+    <a href="/customers.html" class="active">Customers</a>
+  </nav>
+  <main>
+    <h1>Customers</h1>
+    <div class="card">
+      <table>
+        <thead><tr><th>Name</th><th>Email</th><th>Plan</th><th>Total spent</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
